@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rate {
+    display: flex;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    width: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+    line-height: 12px;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate label.selected {
+    color: #ffd333;
+}
+
